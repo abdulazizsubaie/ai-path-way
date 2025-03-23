@@ -1,0 +1,29 @@
+{
+  "name": "career-pathway-ai-assistant",
+  "version": "1.0.0",
+  "description": "Career Pathway AI Assistant for Saudi Students",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "data:import": "cd backend && npm run data:import",
+    "data:destroy": "cd backend && npm run data:destroy",
+    "check": "node checkDependencies.js",
+    "setup": "node setup.js"
+  },
+  "keywords": [
+    "career",
+    "ai",
+    "assistant",
+    "saudi",
+    "vision2030"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "mongodb": "^5.1.0"
+  }
+}
